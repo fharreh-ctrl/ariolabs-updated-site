@@ -87,7 +87,7 @@ export const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="https://instagram.com/ariolabs"
+              href="https://instagram.com/ariolabsofficial"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-secondary transition-colors"
