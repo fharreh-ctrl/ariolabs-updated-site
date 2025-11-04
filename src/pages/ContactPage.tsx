@@ -195,7 +195,7 @@ export default function ContactPage() {
           {/* Calendly */}
           <Card className="p-8">
             <h2 className="font-heading text-2xl font-bold mb-6">Or Book a Call Directly</h2>
-            <InlineWidget url="https://calendly.com/ariolabs/ai-consultation-ph" />
+            <InlineWidget url="https://calendly.com/ariolabs/ariolabs-ai-consultation" />
           </Card>
         </div>
       </div>
