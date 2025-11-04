@@ -25,7 +25,7 @@ export default function SchedulePage() {
           </p>
 
           <div className="bg-card rounded-lg p-4">
-            <InlineWidget url="https://calendly.com/ariolabs/ai-consultation-ph" />
+            <InlineWidget url="https://calendly.com/ariolabs/ariolabs-ai-consultation" />
           </div>
         </motion.div>
       </div>
