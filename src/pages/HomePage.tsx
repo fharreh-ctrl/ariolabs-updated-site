@@ -28,18 +28,18 @@ export default function HomePage() {
               transition={{ duration: 0.5 }}
             >
               <p className="text-secondary font-semibold mb-4 uppercase tracking-wide">
-                AI AUTOMATION FOR SMALL BUSINESSES
+                INQUIRY-FLOW MINI-AUDIT
               </p>
               <h1 className="font-heading text-5xl md:text-6xl font-bold mb-6">
-                Save 10+ Hours a Week Without Hiring More Staff
+                Find the Leaks in Your Inquiry Flow Before They Cost You Clients
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Affordable AI automation for U.S. and Asia-based businesses — delivered by expert teams in days, not months.
+                ArioLabs reviews your contact, booking, and follow-up flow, then sends a simple 1-page mini-audit with 3 practical fixes. No call needed.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/schedule">
                   <Button size="lg" className="w-full sm:w-auto">
-                    Book Free Strategy Session
+                    Request a Mini-Audit
                   </Button>
                 </Link>
                 <Button
@@ -48,7 +48,7 @@ export default function HomePage() {
                   onClick={() => scrollToSection('how-it-works')}
                   className="w-full sm:w-auto"
                 >
-                  See How It Works
+                  See What We Check
                 </Button>
               </div>
             </motion.div>
@@ -72,34 +72,34 @@ export default function HomePage() {
       <section className="py-20 bg-muted/30">
         <div className="container">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
-            Are You Drowning In...
+            Are You Losing Inquiries To...
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 text-center hover:shadow-lg transition-shadow">
               <Inbox className="w-12 h-12 mx-auto mb-4 text-destructive" />
-              <h3 className="font-heading text-xl font-semibold mb-3">Inbox Chaos</h3>
+              <h3 className="font-heading text-xl font-semibold mb-3">A Confusing Contact Form</h3>
               <p className="text-muted-foreground">
-                Spending 2+ hours daily responding to the same questions and trying to keep track of leads.
+                Potential clients fill out your form but never hear back — or give up before they even submit.
               </p>
             </Card>
             <Card className="p-8 text-center hover:shadow-lg transition-shadow">
               <Calendar className="w-12 h-12 mx-auto mb-4 text-destructive" />
-              <h3 className="font-heading text-xl font-semibold mb-3">Scheduling Hell</h3>
+              <h3 className="font-heading text-xl font-semibold mb-3">A Broken Booking Page</h3>
               <p className="text-muted-foreground">
-                Endless back-and-forth emails just to book a single call, leading to lost opportunities.
+                Your booking link is buried, confusing, or missing entirely — making it hard for anyone to take the next step.
               </p>
             </Card>
             <Card className="p-8 text-center hover:shadow-lg transition-shadow">
               <Clock className="w-12 h-12 mx-auto mb-4 text-destructive" />
-              <h3 className="font-heading text-xl font-semibold mb-3">Manual Busywork</h3>
+              <h3 className="font-heading text-xl font-semibold mb-3">No Follow-Up at All</h3>
               <p className="text-muted-foreground">
-                Copy-pasting data between tools, updating spreadsheets, and other repetitive tasks that drain your energy.
+                Leads go cold because there's no system to follow up after the first inquiry — just silence.
               </p>
             </Card>
           </div>
           <div className="text-center mt-8">
-            <Button variant="default" size="lg" onClick={() => scrollToSection('services')}>
-              See Our Solutions
+            <Button variant="default" size="lg" onClick={() => scrollToSection('how-it-works')}>
+              See What We Check
             </Button>
           </div>
         </div>
@@ -109,58 +109,58 @@ export default function HomePage() {
       <section id="services" className="py-20">
         <div className="container">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-4">
-            Choose Your Path
+            Who This Is For
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Select your region to see pricing and services tailored for you.
+            Small service businesses in the U.S. and PH who want a quick outside-eye review of how inquiries actually move through their system.
           </p>
-          
+
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="p-8 hover:shadow-xl transition-shadow">
-              <h3 className="font-heading text-2xl font-bold mb-4">🇺🇸 For U.S. Businesses</h3>
+              <h3 className="font-heading text-2xl font-bold mb-4">🇺🇸 U.S. Service Businesses</h3>
               <p className="text-muted-foreground mb-6">
-                Automate your client onboarding, lead management, and daily operations to reclaim your time and focus on growth.
+                Coaches, consultants, and local service providers who are getting traffic but losing inquiries before they convert.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
-                  <span>AI-Powered Inbox Management</span>
+                  <span>Contact & intake form review</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Automated Scheduling & Follow-ups</span>
+                  <span>Booking page check</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Custom Workflow Automation</span>
+                  <span>Follow-up flow assessment</span>
                 </li>
               </ul>
-              <Link to="/us-businesses">
-                <Button className="w-full">View Packages →</Button>
+              <Link to="/schedule">
+                <Button className="w-full">Request a Mini-Audit →</Button>
               </Link>
             </Card>
 
             <Card className="p-8 hover:shadow-xl transition-shadow">
-              <h3 className="font-heading text-2xl font-bold mb-4">🇵🇭 For PH Businesses</h3>
+              <h3 className="font-heading text-2xl font-bold mb-4">🇵🇭 PH Service Businesses</h3>
               <p className="text-muted-foreground mb-6">
-                Affordable automation solutions to streamline your processes, from customer support to sales, without the high cost.
+                Small businesses and freelancers in the Philippines who want practical, affordable feedback on their inquiry process.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Automated Social Media Inquiries</span>
+                  <span>Social & website inquiry check</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
-                  <span>E-commerce Order Processing</span>
+                  <span>Response & follow-up review</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Local-Friendly Integrations</span>
+                  <span>Simple tracker recommendation</span>
                 </li>
               </ul>
               <Link to="/ph-businesses">
-                <Button className="w-full">View Packages →</Button>
+                <Button className="w-full">Request a Mini-Audit →</Button>
               </Link>
             </Card>
           </div>
@@ -171,29 +171,29 @@ export default function HomePage() {
       <section id="how-it-works" className="py-20 bg-muted/30">
         <div className="container">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
-            How It Works in 4 Simple Steps
+            How the Mini-Audit Works
           </h2>
           <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
               {
                 step: '01',
-                title: 'Book a Call',
-                description: 'Schedule a free strategy session to discuss your challenges and goals.',
+                title: 'Request It',
+                description: 'Fill out a short form — no call needed. Tell us your website and how you currently handle inquiries.',
               },
               {
                 step: '02',
-                title: 'Get Your Blueprint',
-                description: 'We map out a custom automation plan tailored to your specific business needs.',
+                title: 'We Review',
+                description: 'We go through your contact form, booking page, and follow-up flow as an outside eye.',
               },
               {
                 step: '03',
-                title: 'We Build It',
-                description: 'Our team builds, tests, and deploys your new automated workflows in just a few days.',
+                title: 'You Get the Note',
+                description: 'We send a 1-page mini-audit with 3 practical fixes — clear, specific, and ready to act on.',
               },
               {
                 step: '04',
-                title: 'You Scale',
-                description: 'Enjoy your newfound free time and watch your business run more efficiently than ever.',
+                title: 'Optional Quick Fix',
+                description: 'If you want help implementing, we can handle one small fix for you — no large commitment.',
               },
             ].map((item, index) => (
               <Card key={index} className="p-6 text-center">
@@ -205,7 +205,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-12">
             <Link to="/schedule">
-              <Button size="lg">Ready to Start?</Button>
+              <Button size="lg">Request a Mini-Audit</Button>
             </Link>
           </div>
         </div>
@@ -222,17 +222,17 @@ export default function HomePage() {
               {
                 name: 'Jane D.',
                 title: 'Real Estate Coach',
-                quote: 'ArioLabs automated our entire lead follow-up process. We\'re now converting 30% more leads with zero extra effort.',
+                quote: 'The mini-audit was eye-opening. I had no idea my contact form was the reason half my leads were going cold. Fixed it in a day.',
               },
               {
                 name: 'Mike R.',
                 title: 'Business Consultant',
-                quote: 'I was spending 3 hours a day just scheduling calls. Now it\'s completely automated. It\'s like I hired a full-time assistant for a fraction of the cost.',
+                quote: 'Straightforward, practical, no fluff. Got 3 specific things to fix and they actually made a difference in how quickly leads responded.',
               },
               {
                 name: 'Sarah L.',
                 title: 'E-commerce Store Owner',
-                quote: 'The team was incredible. They understood our unique needs and delivered a solution that saved us over 15 hours a week in manual data entry.',
+                quote: 'I expected generic advice. Instead I got a specific note about my booking page that I fixed the same afternoon. Worth every peso.',
               },
             ].map((testimonial, index) => (
               <Card key={index} className="p-6">
@@ -257,33 +257,33 @@ export default function HomePage() {
           </h2>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>How long does it take to get started?</AccordionTrigger>
+              <AccordionTrigger>What exactly do you review?</AccordionTrigger>
               <AccordionContent>
-                Most projects are completed within 7-14 days from our initial strategy call. We prioritize speed and efficiency to get you results fast.
+                We look at your contact form, booking page, and follow-up flow — the path from first inquiry to next step. We check for friction, missing steps, and anything that might cause a lead to drop off before converting.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>What kind of software do you automate?</AccordionTrigger>
+              <AccordionTrigger>Do I need to get on a call?</AccordionTrigger>
               <AccordionContent>
-                We work with a wide range of popular tools like Zapier, Make, ActiveCampaign, HubSpot, Calendly, Google Workspace, and many more. If you use it, we can likely automate it.
+                No call needed. You fill out a short form telling us your website and how you currently handle inquiries. We do the review and send back a 1-page note with 3 practical fixes.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Is this only for tech-savvy business owners?</AccordionTrigger>
+              <AccordionTrigger>How long does it take to get the audit back?</AccordionTrigger>
               <AccordionContent>
-                Absolutely not! Our solutions are designed for you to be completely hands-off. We handle all the technical setup and provide simple instructions for you and your team.
+                Most mini-audits are delivered within 2–3 business days. We keep it quick so you can act on the fixes fast.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>What's the ROI I can expect?</AccordionTrigger>
+              <AccordionTrigger>What's the optional quick fix?</AccordionTrigger>
               <AccordionContent>
-                Most clients save 10+ hours per week, which translates to thousands of dollars in reclaimed productivity. Plus, automated systems mean fewer missed leads and happier customers.
+                After you receive your 1-page note, you can optionally hire us to implement one of the fixes for you — no large project, no retainer. Just one small, specific improvement done for you.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>Do you offer ongoing support?</AccordionTrigger>
+              <AccordionTrigger>Is this only for tech-savvy businesses?</AccordionTrigger>
               <AccordionContent>
-                Yes, we offer optional support and maintenance packages to ensure your automations continue to run smoothly as your business evolves.
+                Not at all. The fixes we recommend are written in plain language — no jargon. Most of them can be done by anyone who manages their own website or booking tool.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -295,10 +295,10 @@ export default function HomePage() {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-              Ready to Automate Your Business?
+              Ready for a Simple Outside-Eye Review?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Book a free, no-obligation 20-minute strategy session to discover how much time and money you could be saving with AI automation.
+              ArioLabs helps small service businesses clean up the path from first inquiry to next step — contact forms, booking pages, follow-up messages, and simple trackers. No call needed.
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
